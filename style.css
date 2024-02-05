@@ -1,0 +1,85 @@
+/* Common CSS */
+body{
+    box-sizing: border-box;
+}
+h1 {
+    border: 3px solid black;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto 10px; /* This centers the element horizontally */
+    background-color: blanchedalmond;
+  }
+  p {
+    padding: 10px;
+    font-size: 18px; /* Increase font size */
+    line-height: 1.5; /* Adjust line spacing */
+  }
+  
+  .row {
+    padding: 10px;
+    border: 3px solid black;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    background-color: lightcyan;
+  }
+  
+  h2 {
+    max-width: 150px;
+    margin-top: 0px;
+    margin-left: auto;
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+    text-align: center;
+  }
+  
+  div > div {
+    margin: 1vw; /* 1% of the viewport width for margin */
+    border: 5px solid black;
+  }
+  #div1{
+    background-color: rgb(240, 223, 223);
+  }
+  #div2{
+    background-color: lightblue;
+  }
+  #div3{
+    background-color: lightyellow;
+  }
+  .op1 {
+    background-color: pink;
+  }
+  
+  .op2 {
+    background-color: rgb(21, 144, 175);
+  }
+  
+  .op3 {
+    background-color: yellow;
+  }
+   /* Percentages are off due to the introduction of margins.*/
+  /* Media Query for viewport width greater than or equal to 992px. */
+ 
+  @media (min-width: 992px) {
+    .col-l-4 {
+      width: 30%; 
+    }
+  }
+  
+  /* Media Query for viewport width between 768px and 991px inclusively. */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6 {
+      width: 46%; /* Each div takes up 50% of the space */
+    }
+    .col-md-12{
+        width: 95.5%;
+    }
+
+  }
+  
+  /* Media Query for viewport width less than 767px. */
+  @media (max-width: 767px) {
+    .col-sm-12 {
+      width: 95.5%; /* Each div takes up 100% of the space */
+    }
+  }
+  
